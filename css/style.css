@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 700px;
+  background: url("/img/bg.jpg.webp") center/cover no-repeat;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  width: 30%;
+}
+.logo img {
+  max-width: 100%;
+  margin-left: 80px;
+}
+
+.nav {
+  width: 70%;
+}
+
+.Nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.Nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Nav ul li:last-of-type {
+  background-color: #eb2b63;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.Nav ul li a:hover {
+  color: #eb2b63;
+  transition: 0.3 ease-in-out;
+}
+
+/* part Tow */
+
+.photo-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 100px 50px;
+}
+
+.photo-text h2 {
+  width: 120px;
+  color: #fff;
+  font-size: 90px;
+  margin-left: 80px;
+  line-height: 1;
+}
+
+.photo-text p {
+  width: 70%;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.rocket {
+  width: 50%;
+  margin-right: 0px;
+}
+
+.rocket img {
+  width: 100%;
+  margin-top: 50px;
+
+  animation: move 4s ease-in-out infinite alternate;
+  -webkit-animation: move 5s ease-in-out infinite alternate;
+}
+@keyframes move {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translate(-60px, -50px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+.btn {
+  margin-left: 80px;
+  margin-top: 20px;
+  background-color: #eb2b63;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  font: 15px;
+}
